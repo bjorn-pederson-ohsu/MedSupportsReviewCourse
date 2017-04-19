@@ -1,0 +1,22 @@
+button2 = new Sprite() ;
+addChild(button2);
+bg2=new Sprite ();
+button2.addChild(bg);
+myFrame2 = new Shape() ;
+myFrame2.graphics.lineStyle(1, 0x958d62, .75, true);
+myFrame2.graphics.moveTo(0,5);
+myFrame2.graphics.beginFill(0x959592,1)
+myFrame2.graphics.lineTo(4,0);
+myFrame2.graphics.lineTo(8,5);
+myFrame2.graphics.lineTo(12,0);
+myFrame2.graphics.lineTo(16,5);
+myFrame2.graphics.lineTo(12,10);
+myFrame2.graphics.lineTo(16,15);
+myFrame2.graphics.lineTo(12,20);
+myFrame2.graphics.lineTo(8,15);
+myFrame2.graphics.lineTo(4,20);
+myFrame2.graphics.lineTo(0.15);
+myFrame2.graphics.lineTo(4,15);
+myFrame2.graphics.lineTo(0,5);
+myFrame2.graphics.endFill()
+bg2.addChild(myFrame2);
