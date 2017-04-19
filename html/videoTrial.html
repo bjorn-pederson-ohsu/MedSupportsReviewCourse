@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>video trial</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" />
+<!--<script src="script/jquery-1.7.1.js"></script>-->
+<!--<script src="script/jquery-ui-1.8.18.custom.min.js"></script>-->
+<link rel="stylesheet" href="script/fancybox/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+<!--<script type="text/javascript" src="script/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>-->
+
+</head>
+<body>
+<div id="siteContainer">
+		    <div id="noteButtons">
+				<ul>
+					<li><a href="#notemaker">Add a note<img src="icons/notebook-1.png"/></a></li>
+					<li><a href="#videomaker">Add a video<img src="icons/video.png"/></a></li>
+				</ul>
+		    </div>
+        <div id="toolSpace">
+			<div id="helpArea">
+			<ul>
+				<li><a class="helpset" rel="videogallery1" href="#helpVid1" ><img src="images/googledocsthumb.jpg" /></a></li>
+				<li><a class="helpset" rel="videogallery1" href="#helpVid2"><img src="images/inspirationthumb.jpg" /></a></li>
+				<li><a class="helpset" rel="videogallery1" href="#helpVid3"><img src="images/introductionthumb.jpg" /></a></li>
+			</ul>
+			</div>
+			<div id="helpVid1" title="Signing Up for Google Docs in 2008">
+					<div id="vidHolder">
+						<video width="426" height="320" controls="controls">
+							<source src="video/googledocs.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="video/googledocs.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/googledocs.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+							Your browser does not support the video tag.
+						</video> 
+					</div>
+			</div>
+			<div id="helpVid2" title="Moving Your Inspiration Concept Map to Google Docs">
+					<div id="vidHolder">
+						<video width="426" height="320" controls="controls">
+							<source src="video/inspirationtogoogle.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="video/inspirationtogoogle.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/inspirationtogoogle.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+							Your browser does not support the video tag.
+						</video> 
+					</div>
+			</div>
+			<div id="helpVid3" title="Introduction to 5007 Fall 2008 Ag Ed">
+					<div id="vidHolder">
+						<video width="426" height="320" controls="controls">
+							<source src="video/introduction.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="video/introduction.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/introduction.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+							Your browser does not support the video tag.
+						</video> 
+					</div>
+			</div>
+	
+			<div id="notesArea">
+				<div id="notes">
+					<ul>
+						<li>Here are some notes</li>
+						<li>here are more notes</li>
+						<li>And a third for good measure</li>
+						<li>Here are some notes</li>
+						<li>here are more notes</li>
+						<li>And a third for good measure</li>
+						<li>Here are some notes</li>
+						<li>here are more notes</li>
+						<li>And a third for good measure</li>
+					</ul>
+				</div>
+				<!--<div id="noteButtons">
+					<ul>
+						<li><a href="#notemaker">Add a note<img src="icons/notebook-1.png"/></a></li>
+						<li><a href="#videomaker">Add a video<img src="icons/video.png"/></a></li>
+					</ul>
+				</div>-->
+				<div id="notemaker" class="notemaker" title="Adding a New Note">
+					<form>
+						<fieldset>
+						  <legend>Adding a New Note</legend>
+						  <label for="noteBody">Notes:</label><br></br>
+						  <textarea id="noteBody" name="noteBody" placeholder="Add your notes here" required></textarea><br></br>
+						</fieldset>
+					</form> 
+				</div>
+				<div id="videomaker" class="videomaker" title="Adding a New Video Note">
+				<p>This is some holding text</p>
+				</div>
+			</div>
+		</div>
+</div>
+<script src="script/jquery-1.7.1.js"></script>
+<script src="script/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="script/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script>
+$(function(){
+
+var dialogOn = false
+
+$('#toolSpace').hide()
+
+$('#noteButtons').on('click','a', function(evt){
+	evt.preventDefault();
+	if (dialogOn){
+		console.log("dialog is on")
+		//$(diaBox).eq(0).dialog("destory").remove();
+		return false;
+		}
+	console.log($(this).attr('href'));
+	var loca = $(this).attr('href');
+	
+	if (loca === '#notemaker'){
+	dialogHandler(loca, false)
+	}
+	if (loca === '#videomaker'){
+	dialogHandler(loca, true)
+	}
+	//return false;
+})
+
+function dialogHandler (loca, modalSetting){
+		console.log("start of dialogHandler: "+dialogOn)
+		var diaBox = $(loca);
+		diaBox.dialog({
+				height: 420,
+				width: 476,
+				modal: modalSetting,
+				//title: $(loca).attr('title'),
+				open: function(event, ui) {
+					$('.ui-dialog').hide().fadeIn(300);
+					dialogOn=true
+				},
+				buttons:{
+					"Save Note": function () {},
+					"Cancel": function() {
+						$( this ).dialog( "close" );
+					}
+				},
+				close: function(event, ui)
+				{
+					$(this).dialog("destroy");
+					dialogOn=false
+					console.log('dialog destroyed on close')
+				}
+					
+			});
+		diaBox.dialog("open");
+		
+
+
+}
+})
+</script>
+
+</body>
+
+
+</html>
