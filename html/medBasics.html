@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Working with Medication Basics</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" />
+<link rel="stylesheet" href="script/fancybox/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="siteContainer">
+	<div id="toolHolder">
+		<div id="toolArea">
+			<ul>
+				<li><a data-toolcat="info" href="#">My Info</a></li>
+				<li><a data-toolcat="helpArea" href="#">Help</a></li>
+				<li><a data-toolcat="notesArea" href="#">Notes</a></li>
+				<li><a data-toolcat="leave" href="#">Log Out</a></li>
+			</ul>
+		</div>
+		<div id="toolWorkSpace"></div>
+		<div id="toolSpace">
+			<div id="helpArea">
+				<ul>
+					<li><a class="helpset" rel="videogallery1" href="#helpVid1" ><img src="images/googledocsthumb.jpg" /></a></li>
+					<li><a class="helpset" rel="videogallery1" href="#helpVid2"><img src="images/inspirationgooglethumb.jpg" /></a></li>
+					<li><a class="helpset" rel="videogallery1" href="#helpVid3"><img src="images/introductionthumb.jpg" /></a></li>
+				</ul>
+			</div>
+			<div id="helpVid1" title="Signing Up for Google Docs in 2008">
+					<div class="vidHolder">
+						<video width="426" height="320" controls="controls">
+							<source src="video/googledocs.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="video/googledocs.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/googledocs.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+							Your browser does not support the video tag.
+						</video> 
+					</div>
+			</div>
+			<div id="helpVid2" title="Moving Your Inspiration Concept Map to Google Docs">
+					<div class="vidHolder">
+						<video width="426" height="320" controls="controls">
+							<source src="video/inspirationgoogle.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="video/inspirationgoogle.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/inspirationgoogle.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+							Your browser does not support the video tag.
+						</video> 
+					</div>
+			</div>
+			<div id="helpVid3" title="Introduction to 5007 Fall 2008 Ag Ed">
+					<div class="vidHolder">
+						<video width="426" height="320" controls="controls">
+							<source src="video/introduction.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="video/introduction.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/introduction.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+							Your browser does not support the video tag.
+						</video> 
+					</div>
+			</div>
+	
+			<div id="notesArea">
+				<div id="notes">
+					<ul>
+						<li>Here are some notes</li>
+						<li>here are more notes</li>
+						<li>And a third for good measure</li>
+						<li>Here are some notes</li>
+						<li>here are more notes</li>
+						<li>And a third for good measure</li>
+						<li>Here are some notes</li>
+						<li>here are more notes</li>
+						<li>And a third for good measure</li>
+					</ul>
+				</div>
+				<div id="noteButtons">
+					<ul>
+						<li><a href="#notemaker">Add a note<img src="icons/notebook-1.png"/></a></li>
+						<li><a href="#videomaker">Add a video<img src="icons/video.png"/></a></li>
+					</ul>
+				</div>
+				<div id="notemaker" class="notemaker" title="Adding a New Note">
+					<form>
+						<fieldset>
+						  <legend>Adding a New Note</legend>
+						  <label for="noteBody">Notes:</label>
+						  <textarea id="noteBody" name="noteBody" placeholder="Add your notes here" required></textarea><br />
+						</fieldset>
+					</form> 
+				</div>
+				<div id="videomaker" class="videomaker" title="Adding a New Video Note">
+				<p>This is some holding text</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="siteHeader">
+	    <h1>Working with Medication Basics</h1>
+	    <p>Help to figure out this problem by looking at this information and providing a solution for the DSP.</p>
+	    
+	</div><!---siteHeader End--->
+	<div id="courseArea">
+		<div id="workSpace"></div>
+	</div>
+	<div id="mainMenu">
+		<ul>
+			<li><a data-maincat="main" href="index.html">main menu</a></li>
+			<li><a data-maincat="issue" href="#issueMenu">issue</a></li>
+			<li><a data-maincat="information" href="#informationMenu">information</a></li>
+			<li><a data-maincat="submission" href="#submissionMenu">submission</a></li>
+		</ul>
+	</div>	
+	<div id="directions">
+		<h2>Directions</h2>
+		<p>All of the items that explain and define the problem are listed across the top of the module area.</p>
+		<p class="centerText">*** Hint: We recommend that you start with the video first. ***</p>
+	</div>
+	<div id="issueMenu">
+		<ul>
+			<li><a data-subcat="#videoSet" href="#Video">Video</a></li>
+			<li><a data-subcat="#imageSet" href="#Images">Images</a></li>
+			<li><a data-subcat="#documentsSet" href="#Documents">Documents</a></li>
+			<li><a data-subcat="#problemSet" href="#ProblemOverview">Problem Overview</a></li>
+		</ul>
+	</div><!---End Issue Menu--->	
+	<div id="issueContent">
+		<div id="videoSet">
+			<h2>Video</h2>
+			<div class="vidHolder">
+			<video width="426" height="320" controls="controls">
+				<source src="video/mscr1.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="video/mscr1.webm" type='video/webm; codecs="vp8, vorbis"'>
+				<source src="video/mscr1.ogg"  type='video/ogg; codecs="theora, vorbis"'>  
+				Your browser does not support the video tag.
+			</video> 
+			</div>
+			
+		</div>
+		<div id="imageSet">
+			<h2>Images</h2>
+			<a class="imageset" rel="gallery1" href="images/amoswalk.jpg" title="walking the dog"><img src="images/amoswalkthumb.jpg" ALT="walking the dog"/></a>
+			<a class="imageset" rel="gallery1" href="images/class1.jpg" title="A classroom that I did some research in"><img src="images/class1thumb.jpg" ALT="A classroom that I did some research in"/></a>
+			<a class="imageset" rel="gallery1" href="images/class2.jpg" title="Another picture of that classroom"><img src="images/class2thumb.jpg" ALT="Another picture of that classroom" /></a>
+			<a class="imageset" rel="gallery1" href="images/class3.jpg" title="Yet one more picture"><img src="images/class3thumb.jpg" ALT="Yet one more picture"/></a>
+			<a class="imageset" rel="gallery1" href="images/class4.jpg" title="Computers and a file cabinet"><img src="images/class4thumb.jpg" ALT="Computers and a file cabinet"/></a>
+			<a class="imageset" rel="gallery1" href="images/class5.jpg" title="The meeting table"><img src="images/class5thumb.jpg" ALT="The meeting table"/></a>
+		</div>
+		<div id="documentsSet">
+			<h2>Documents</h2>
+			<a href="docs/10-1.1.1.22.1979.pdf" target="_blank">
+				<div class="iconPic">
+					<img src="icons/pdficon.png" ALT="PDF Download"/>
+				</div>
+				<div class="iconDes">
+					<p>First Principles of Instuction</p>
+					<p>66kb</p>
+				</div>
+				<div id="seClear"></div>
+			</a>
+			<a href="docs/Learn How To Code.pdf" target="_blank">
+				<div class="iconPic">
+					<img src="icons/pdficon.png" ALT="PDF Download"/>
+				</div>
+				<div class="iconDes">
+					<p>Learn to Code: The Full Beginners Guide</p>
+					<p>437kb</p>
+				</div>	
+				<div id="seClear"></div>
+			</a>
+			<a href="docs/paper_28346.pdf" target="_blank">
+				<div class="iconPic">
+					<img src="icons/pdficon.png" ALT="PDF Download"/>
+				</div>
+				<div class="iconDes">
+					<p>Preservice Technology Integration Course Revision: A Conceptual Guide</p>
+					<p>225kb</p>
+				</div>
+				<div id="seClear"></div>
+			</a>
+		</div>
+		<div id="problemSet">
+			<h2>Problem Overview</h2>
+			<p>This problem is looking at the need to understand how to work with the medications that the client has. The client is experiencing some problems with the medications. The dsp recently went with the client to the doctor for a medication-based check up. The dsp noticed some information about new medications thatwhere prescribed. The client uses herbal supplements in his daily medication intake.</p>
+		</div>
+		     
+	</div><!--End Issue Content-->
+	<div id="informationMenu">
+		<ul>
+			<li><a data-subcat="#infoArea-1" href="#">Medication Types</a></li>
+			<li><a data-subcat="#infoArea-2" href="#">Medication Problems</a></li>
+			<li><a data-subcat="#infoArea-3" href="#">Destroying Medication</a></li>
+			<li><a data-subcat="#infoArea-4" href="#">Medication Labels</a></li>
+		</ul>
+	</div>	
+	<div id="informationContent">
+		<div id="infoArea-1">
+			<div class="infodiv">
+				<h2>Why take medications</h2>
+				<p>It is important to understand why people take medications, remedies, and supplements. People use these for many reasons. This includes to:</p>
+				<ul>
+				<li>Prevent illness or disease.</li>
+				<li>Cure illness or disease.</li>
+				<li>Treat long term health conditions.</li>
+				<li>Treat mental health and neurological conditions.</li>
+				<li>Respond to pain and inflammation.</li>
+				<li>Improve or enhance his or her lifestyle.</li>
+				</ul>
+			</div>
+			<div class="infodiv" >
+				
+				<h2>Medication Examples</h2>
+				<p>Let&#39;s look at some examples of medications, remedies, and supplements that people take.</p>
+				<h4>Prevent illness or disease.</h4>
+				<p>Supplements are often used for this purpose. An example is taking aspirin to prevent a heart attack. Another example is taking Echinacea to prevent colds.</p>
+				<h4>Cure illness or disease.</h4>
+				<p>Examples include colds, flu, and ulcers. Treatment may include antibiotics or antiviral medications. Someone may also use over the counter medicine or home remedy. This can treat symptoms like congestion, coughs, or fever.</p>
+				<h4>Treat long term health conditions.</h4>
+				<p>Examples include heart problems, high blood pressure, and diabetes.  People will often be given prescription medication to treat these conditions.</p>
+				
+			</div>
+			<div class="infodiv">
+				<h2>More Medication Examples</h2>
+				<p>Below are more examples of medications, remedies, and supplements that people take.</p>
+				<h4>Treatment of mental health and neurological conditions.</h4>
+				<p>Examples include depression, schizophrenia, and anxiety disorders. Prescription medication is sometimes used to treat these. Some cultures believe these conditions have a spiritual basis. In this case people may choose to use spiritual cures or home remedies.</p>
+				<h4>Response to pain and inflammation.</h4>
+				<p>Examples include arthritis or migraine headaches. Pain can be from an injury. It can also be chronic or ongoing. Someone can also have pain without a known cause. Non-prescription and prescription medicine may be used for this. Sometimes heat or cold, home remedies, and herbals will be used.</p>
+				<h4>Improve Lifestyle.</h4>
+				<p>There are many conditions that can decrease a person's overall quality of life. Examples include insomnia, acne, allergies, and smoking. A person may take medication to help with this. This includes prescription, non-prescription, and natural or herbal remedies.</p>
+				
+			</div>
+			<div class="infodiv">
+				
+				<h2>Prescription Drugs</h2>
+				<p>Prescription medication requires a doctor&#39;s written approval. It must be bought from a licensed pharmacist. Drugs that are more likely to be abused usually need a doctor&#39;s prescription too. This is true of drugs that may have serious side effects. It is also true of drugs where dosage and timing is very important. Examples include anti-depressants and drugs for hyperactivity.</p>
+				
+			</div>
+			<div class="infodiv">
+				
+				<h2>Controlled and Uncontrolled</h2>
+				<p>Drugs are put into two different categories. The first are controlled substances. The second are non-controlled substances. Controlled substances can be legal or illegal. These drugs have a high potential for abuse. An example of a controlled legal drug is a strong pain medication like Oxycodone. Examples of controlled illegal drugs are heroin or cocaine.</p>
+				
+			</div>
+			<div class="infodiv">
+				
+				<h2>Alternative Treatments</h2>
+				<p>It is becoming more common to use alternative treatments to treat health conditions. Doctors are more open to treatments that focus on the mind, body, and spirit.These include:</p>
+				<h4>Natural Remedies</h4>
+				<p>These are made from natural substances found in herbs and plants.They may require eating or drinking something. They may be inhaled, gargled, or rubbed on the skin. They can be used in place of medications or taken with medications.</p>
+				<h4>Supplements</h4>
+				<p>These include vitamins, minerals, and other substances. An example is taking extra protein or fiber to ensure good balance in a daily diet.</p>
+				<h4>Therapy</h4>
+				<p>This can include alternative therapies. Examples include acupuncture, acupressure, and massage therapy.</p>
+			</div>
+			<div class="infodiv">
+				
+				<h2>Forms of Medications</h2>
+				<p>Medications come in many different forms. This includes:</p>
+				<ul>
+				<li>Pills</li>
+				<li>Lozenges</li>
+				<li>Liquids</li>
+				<li>Creams or ointments</li>
+				<li>Patches</li>
+				<li>Suppositories</li>
+				<li>Sprays</li>
+				</ul>
+				
+			</div>
+			<div class="infodiv">
+				
+				<h2>Giving Medications</h2>
+				<p>Medications are meant to be taken at very specific times. A timing mistake can be very serious. It can lead to an overdose or to poor treatment. As a direct support professional, there are three kinds of timing you need to know about</p>
+				<h4>Time-Limited Medications</h4>
+				<p>Often given to treat an illness or a temporary condition. An example is strep throat. These are often given in the smallest dose possible. You should never skip a dose. It is important to take these on time. It is also important to take the full amount of medication. Not doing this can reduce a medication&#39;s effectiveness.</p>
+				<h4>On-Going Medications</h4>
+				<p>These are taken regularly. They are taken in a routine way. An example is medicine for diabetes or blood pressure. It is important to develop a system. This helps to give these in the right way at the right time. Always check the label. Always make sure no changes have been made.</p>
+				<h4>As Needed Medications</h4>
+				<p>These are often called PRNs. A PRN may be an extra dose of a regular medication. Or it may be a separate prescription. It may also be an over-the-counter medication. PRNs meet a specific need. An example is medication for a head or a stomach ache. It could also help with a change in a chronic condition like blood pressure. PRN medications need to be given with the same care as on-going medications.</p>
+				
+			</div>
+		</div><!--Info Area #1 End-->
+		<div id="infoArea-2">
+			<div class="infodiv">
+				<h2>Different Problems</h2>
+				<p>There are many different problems that can happen a person takes medication. These include:</p>
+				<h4>Drug Interactions:</h4>
+				<p>Drugs can interact with things you eat, drink, or with other drugs. This can change the effect of the drug. It can make the drug more toxic or less effective. Discuss possible interactions with a health care practitioner before starting a new medication.</p>
+				<h4>Side Effects: </h4>
+				<p>Many medications are known to have unwanted effects. Some examples include nausea, constipation, headache, or weakness. There may be other options. This includes lowering the dosage or using a different medication.</p>
+				<h4>Medication Sensitivity: </h4>
+				<p>Some people are more sensitive to medications than others. This includes the elderly, women, and children. It includes people with metabolic disorders. It also includes those with poor functioning livers or kidneys.</p>
+				<h4>Adverse Reactions: </h4>
+				<p>This is a poor reaction to a medication that is unexpected and severe. It can be long-lasting or life-threatening. Signs include severe pain, severe nausea and vomiting, difficulty breathing, difficulty staying awake, panic attacks, a sudden change in blood pressure, or a rapid heartbeat.</p>
+				<h4>Drug Allergies: </h4>
+				<p>Common symptoms include hives, skin rash, itching of the skin or eyes, wheezing, swelling of the lips, tongue, and/or face. Most cause minor skin rashes and hives. But some can be life-threatening and includes a drop in blood pressure, hives, and trouble breathing.</p>
+			</div>
+			<div class="infodiv">
+				<h2>Watch for Problems</h2>
+				<p>As a direct support professional you will need to watch for problems with medications. It is very important to write down what you see in detail. This includes what day, time, and exactly what happened. Be highly alert whenever a person you support starts a new medication. The following are signs that the person may be having problems with a medication:</p>
+				<ul>
+				<li>Sleepiness or drowsiness at unusual times.</li>
+				<li>A change in appetite, thirst, or sleep patterns.</li> 
+				<li>An increase or decrease in usual challenging behaviors. This may include aggression, self-injury, yelling, crying, or repetitive behaviors.</li>
+				<li>Unusual behaviors for the person.  A change in his or her mood.</li>			
+				<li>Rashes, hives, signs of a "cold," discomfort, or illness.</li>
+				</ul>
+			</div>
+			<div class="infodiv">
+				<h2>Dealing with side-effects</h2>
+				<p>Medication side effects can make it hard for a person to take the medication. As a direct support professional you can help someone you support to track side effects. You can communicate these to health care professionals. This can help to find the best possible treatment. To manage side effects and sensitivities do the following:</p>
+				<ul>
+				<li>Know what side effects are likely to occur. Read the packaging or ask the healthcare professional about this.</li>
+				<li>Make sure you understand how long these side effects may last.</li>
+				<li>Keep track of any uncomfortable or irritating effects that happen.</li>
+				<li>Tell the person&#39;s health care professional about the effects if they are uncomfortable or unexpected.</li>
+				<li>Serve as an advocate. Investigate alternatives and seek a second opinion if desired by the person.</li>
+				<li>Contact emergency services immediately if side effects are severe.</li>
+				</ul>
+			</div>
+			<div class="infodiv">
+				<h2>Handling Reactions</h2>
+				<p>A person you support may have a problem reaction to a medication. If so, the following steps need to be taken:</p>
+				<ul>
+				<li> Handle any health needs immediately. Make sure the person is safe.</li>
+				<li> Write down exactly what happened. Include the following:</li>
+					<ul>
+					<li> When and how much was taken.</li>
+					<li> Any cautions or precautions that may have been missed.</li>
+					<li>What happened to the person. Describe exactly what happened and when it happened (time and date).</li>
+					</ul>
+				</ul>
+				<p>Gather any information you can think of that may help determine the cause of the problem. This may help to clarify what caused the problem or reaction.</p>
+				<p>Communicate these problems and information to the health practitioner who prescribed the medication.</p>
+			</div>
+		</div>
+		<div id="infoArea-3">
+			<div class="infodiv">
+				<h2>Why Destroy</h2>
+				<p>Sometimes medication can no longer be used. It is a good idea to dispose of this promptly. Medication may need to be destroyed because:</p>
+				<ul>
+				<li>It has become soiled or otherwise ruined. An example is medication that has fallen on the floor or that has not been properly stored.</li>
+				<li>It is past the expiration date.</li>
+				<li>The person can no longer use it. Examples include when a prescription changes, the person no longer has the condition, or the medication causes serious adverse reactions.</li>
+				</ul>
+			</div>
+			<div class="infodiv">
+				<h2>Destruction Directions</h2>
+				<p>Destroying medication may be part of your job as a direct support professional. The following are some common requirements:</p>
+				<ul>
+				<li>Specific procedures may need to be followed. Find out what your employer requires.</li> 
+				<li>The presence of specific personnel may be required. An example might be a registered nurse.</li>
+				<li>You may need a witness when you destroy medicine.</li>
+				<li>Specific methods to document destruction of medication may be expected. This may include what was destroyed and how much. Witnesses should sign off on any documentation.</li>
+				</ul>
+			</div>
+			<div class="infodiv">
+				<h2>Proper Disposal</h2>
+				<p>It used to be common to flush medicine down the toilet to destroy it. Today there are pollution concerns about this practice. You may want to check into other options in the community. One option may be to return unused medicine to the pharmacist for disposal. Another may be to take unused medicine to a hazardous waste collection site. Call a local pharmacist and ask for help. He or she can tell you the best way to destroy a certain kind of medicine.</p>
+			</div>
+		</div><!--end InfoArea-3-->
+		<div id="infoArea-4">
+			<div class="infodiv">
+				<h2>Label Items</h2>
+				<p>To administer medication correctly, you must be able to read a medication label and other written information about medications. </p>
+				<p>Items on a Label include:</p>
+				<ul>
+				<li>Prescriber&#39;s name.</li>
+				<li>Name of person receiving the medication. (Right person)</li>
+				<li>Date the prescription was filled.</li>
+				<li>Name of medication. (Right medication)</li>
+				<li>The quantity or amount in the prescription.</li>
+				<li>Strength and dose of the medication. (Right dose)</li>
+				<li>Directions on how to use the medication. (Right time and right route)</li>
+				<li>Expiration date.</li>
+				<li>Number of refills.</li>
+				<li>Pharmacy information.</li>
+				<li>Prescription number.</li>
+				<li>Warnings and precautions.</li>
+				</ul>	
+			</div>
+			<div class="infodiv">
+				<h2>4 OTC Parts</h2>
+				<p>There are four critical parts to a label on an over-the-counter (OTC) medication.</p>
+				<h4>Uses</h4>
+				<p>This describes why a person takes the medication and what it will do.</p>
+				<h4>Directions</h4>
+				<p>This has information about correct dosage, timing, and route. It includes preparation and technique. It will also tell you how often the medication can be taken. </p>
+				<h4>Ingredients</h4>
+				<p>Medication has active and inactive ingredients. Active ingredients have known medicinal effects. Inactive ingredients do not.  Some active ingredients have substances that need to be avoided. Examples include alcohol, sugar, or certain dyes. Problems with inactive ingredients are listed under "Other Information."  Never use more than one medication that has the same active ingredient at the same time.</p>
+				<h4>Warnings</h4>
+				<p>This provides information about interactions a drug may have with other substances. It shares how children or pregnant and nursing women may be affected.  It lists problem reactions and what to do about an overdose. It will also help you understand when to contact a doctor about symptoms or problems with the medications.</p>
+			</div>	
+		</div><!--end of InfoArea-4-->
+	</div>
+	<div id="submissionMenu">
+		<ul>
+			<li><a data-subcat="#solution" href="#">Your Solution</a></li>
+			<li><a data-subcat="#test" href="#">Test</a></li>
+			<li><a data-subcat="#reflection" href="#">Reflection</a></li>
+		</ul>
+	</div>
+	<div id="submissionContent">
+		<div id="solution">
+			<h2>Solution</h2>
+			<p>Use the information that you have reviewed in this lesson and consider possible solution for the DSP. You may use the notes function or your own method to organize your thoughts before recording.</p><p>When you are done recording, watch your video and decide if you would like to save your solution or re-record it.</p>
+			<button class="subMenuButton">Record Your Solution &#8594;</button>
+		</div>
+		<div id="test">
+			<fieldset>
+				<legend>End of Module Test</legend>
+			<form action="#" method="post">
+				<ul>
+				<li><div class="questions">
+				<h4>People take medications for many different reasons including to:</h4>
+				<input type="radio" name="question0" value="1" id="question0-answers-1"><label for="question0-answers-1">Prevent illness, cure disease, treat physical and mental health, help with pain, or improve lifestyle.</label><br />	
+				<input type="radio" name="question0" value="2" id="question0-answers-2"><label for="question0-answers-2">Prevent illness, cure disease, treat physical and mental health, increase energy, or improve lifestyle.</label><br />
+				<input type="radio" name="question0" value="3" id="question0-answers-3"><label for="question0-answers-3">Prevent illness, cure disease, increase energy, help with pain, or improve lifestyle.</label><br />
+				<input type="radio" name="question0" value="4" id="question0-answers-4"><label for="question0-answers-4">Prevent illness, cure disease, treat physical and mental health, help with pain, or manage hygiene.</label><br />
+				</div></li>
+				<li><div class="questions">
+				<h4>Prescription drugs require a doctor&#39;s written prescription because they are more likely to be abused and may have serious side effects if taken incorrectly.</h4>
+				<input type="radio" name="question1" value="1" id="question1-answers-1"><label for="question1-answers-1">True</label><br />	
+				<input type="radio" name="question1" value="2" id="question1-answers-2"><label for="question1-answers-2">False</label><br />
+				</div></li>
+				<li><div class="questions">
+				<h4>Controlled substances are always illegal drugs that have a high risk of abuse.</h4>
+				<input type="radio" name="question2" value="1" id="question2-answers-1"><label for="question2-answers-1">True</label><br />	
+				<input type="radio" name="question2" value="2" id="question2-answers-2"><label for="question2-answers-2">False</label><br />
+				</div></li>
+				<li><div class="questions">
+				<h4>Alternative treatments that focus on the mind, body and spirit include:</h4>
+				<input type="radio" name="question3" value="1" id="question3-answers-1"><label for="question3-answers-1">Natural remedies, massage therapy, and vitamins.</label><br />	
+				<input type="radio" name="question3" value="2" id="question3-answers-2"><label for="question3-answers-2">Supplements, therapy, and vitamins.</label><br />
+				<input type="radio" name="question3" value="3" id="question3-answers-3"><label for="question3-answers-3">Natural remedies, supplements, and therapy.</label><br />
+				<input type="radio" name="question3" value="4" id="question3-answers-4"><label for="question3-answers-4">None of the above.</label><br />
+				</div></li>
+				<li><div class="questions">
+				<h4>Medications come in three main forms that include pills, liquids, and ointments.</h4>
+				<input type="radio" name="question4" value="1" id="question4-answers-1"><label for="question4-answers-1">True</label><br />	
+				<input type="radio" name="question4" value="2" id="question4-answers-2"><label for="question4-answers-2">False</label><br />
+				</div></li>
+				</ul>
+				<input type="submit" value="Submit" class="subMenuButton"/>
+			</form>
+			</fieldset>			
+		</div>
+		<div id="reflection">
+			<h2>Reflection</h2>
+			<p>Use the note taking function of this program or your own notebook. Write down your answers the following questions.Think about a person you currently support</p>.
+			<ul><li>Describe each medication, how it is taken, the dosage, and its purpose.</li>
+			<li>Include over the counter medications, alternative treatments, herbal supplements and vitamins, and prescription medications.</li>
+			<li>After going through this part of the lesson review, describe the changes you will make in the future with regard to knowing about and understanding the medications of those you support.</li></ul>
+			<p>When you are ready, use your notes and record a personal video reflection.</p>
+			<button class="subMenuButton">Record Your Reflection &#8594;</button>
+		</div>
+		
+	</div>
+	</div>
+<script src="script/jquery-1.7.1.js"></script>
+<script src="script/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="script/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script>
+$(function(){
+	itemArray = [$('#directions'),$('#issueMenu'),$('#issueContent'),$('#informationMenu'),$('#informationContent'),$('#submissionMenu'),$('#submissionContent'), $('#toolSpace')];
+	detachArray = new Array;
+	var $toolset = $('#toolArea');
+	var $subMenu = $('#issueMenu')
+	var issueMenuWidth = 0;
+	var $directions = $('#directions')
+	var $mainMenu = $('#mainMenu');
+	var $workspace = $('#workSpace');
+	var $toolworkspace = $('#toolWorkSpace').hide()
+	var dialogOn = false
+	
+	//initial page setup
+	function init() {
+		for (var i = 0; i <itemArray.length; i++) {
+		detachArray[i]=itemArray[i].detach();
+		};
+		itemArray=[]
+		console.log(itemArray)
+		itemArray = detachArray
+		console.log(itemArray)
+		$toolset.find('ul').addClass('toolAreaList');
+		$toolset.find('li a').addClass('toolMenuButton');
+		$toolset.addClass('toolArea')
+		console.log("From tools: "+$toolset.attr('id'))
+		$toolset.on('click','a',toolSwitch);
+		$toolworkspace.on('click', 'button', function (){
+					$toolworkspace.slideUp(300, function(){
+						$toolworkspace.empty();
+					})
+				})
+		$toolworkspace.on('toolSpaceDown', function () {
+				$toolworkspace.delay(50).slideDown(200)
+			})
+		$subMenu.find('ul').addClass('subMenuList');
+		$subMenu.find('li a').addClass('subMenuButton');
+		$subMenu.addClass('subMenu');
+		$subMenu.prependTo('#courseArea');
+		$subMenu.find('li a')
+			.each(function() {
+				issueMenuWidth+=$(this).outerWidth(true);
+				})
+		$subMenu.css('width', issueMenuWidth+1);
+	
+		$directions.addClass('textBox');
+		$directions.appendTo($workspace)
+		console.log("From init: "+$workspace.children().attr('id'))
+		$mainMenu.find('ul').addClass('mainMenuList');
+		$mainMenu.find('li a').addClass('mainMenuButton').each(function(){
+			if ($(this).attr("data-maincat")=="issue"){
+			$(this).addClass('intiButton')
+			};
+		});
+		$mainMenu.addClass('mainMenu');
+		$mainMenu.on('click','a',mainMenuSwitch)
+		$subMenu.on('click','a',subMenuSwitch);
+	}
+	
+	init()
+	
+	function subMenuBuild() {
+		issueMenuWidth=0;
+		$subMenu.find('ul').addClass('subMenuList');
+		$subMenu.find('li a').addClass('subMenuButton');
+		$subMenu.addClass('subMenu');
+		$subMenu.prependTo('#courseArea');
+		$subMenu.find('li a')
+			.each(function() {
+				issueMenuWidth+=$(this).outerWidth(true);
+				});
+		$subMenu.css('width', issueMenuWidth+1)
+		$subMenu.fadeIn(300);
+		$subMenu.on('click','a',subMenuSwitch); 
+	};
+	
+	function toolSwitch(event){
+		//$toolworkspace.empty();
+		$toolsapceCheck= $('#toolWorkSpace > div')
+		console.log("button clicked: "+$(this).data('toolcat'))
+		var section  = $(this).data('toolcat')
+		console.log($toolsapceCheck.length === 0);
+		console.log("block: "+$toolsapceCheck.length)
+		//console.log("hidden: "+$toolworkspace.is('div'));
+		if ($toolsapceCheck.length===0){
+			console.log("block false")
+			$toolworkspace.empty();
+			filltoolSpace(section)
+		}else{
+			$toolworkspace.slideUp(300, function (){
+			$toolworkspace.empty();
+			filltoolSpace(section)
+			})
+		}
+		//if (!$toolworkspace.is('display','none')){
+		//	console.log("hidden true")
+		//	$toolworkspace.empty();
+		//	filltoolSpace(section)
+		//}
+		return false; 
+	}
+	
+	function filltoolSpace(section){
+		console.log("button clicked filltoolSpace: "+section)
+		itemArray[7].find('div').each(function(){
+			var searchFind= $(this)
+			console.log(searchFind)
+			if (searchFind.attr('id')===section){
+				var toolSelection = searchFind.clone()
+				toolSelection.find('div').each(function(){
+				 if(($(this).attr('id')==='notemaker') || ($(this).attr('id')==='videomaker')){
+						$(this).hide();
+					}
+				})
+				
+				$toolworkspace.append(toolSelection)
+				$toolworkspace.append('<button class="toolCloseButton">close</button>')
+						.trigger('toolSpaceDown')
+			}
+		});
+		$('#noteButtons').on('click', 'ul li a', function(evt){
+				evt.preventDefault();
+				if (dialogOn){
+						console.log("dialog is on")
+						//$(diaBox).eq(0).dialog("destory").remove();
+						return false;
+				}
+				console.log($(this).attr('href'));
+				var loca = $(this).attr('href');
+				
+				if (loca === '#notemaker'){
+				dialogHandler(loca, false)
+				}
+				if (loca === '#videomaker'){
+				dialogHandler(loca, true)
+				}
+		});
+		
+		//$('#noteButtons').on('showNoteButtons', function(){
+		//		$('#noteButtons').fadeIn(300);
+		//})
+		
+		$('#helpArea').on('click', 'ul li a', function(){
+			console.log($(this).attr('href'));
+			var loca = $(this).attr('href');
+			loc  = loca.replace('#', '')
+			console.log('loc value: '+loc);
+			itemArray[7].find('div').each(function(){
+				var searchFind = $(this)
+				console.log(searchFind.attr('id'))
+				if (searchFind.attr('id')===loc){
+					console.log("search matched")
+					var locMatched=searchFind.clone()
+					//var locMatched=searchFind.html()
+					$(locMatched+":ui-dialog" ).dialog( "destroy" ); 
+					$(locMatched).dialog({
+						height: 420,
+						width: 476,
+						modal: true,
+						open: function(event, ui) {
+							$('.ui-widget-overlay').hide().fadeIn();
+							$('.ui-dialog').hide().fadeIn(300);
+						},
+						//beforeClose: function(event, ui) {
+						//	$('.ui-widget-overlay').fadeOut(300);
+						//	$('.ui-dialog').hide().fadeOut();
+						//},
+						close: function(event, ui) {
+							$(locMatched+":ui-dialog").dialog( "destroy" )
+						}
+					});
+					$(locMatched).dialog("open");
+					return false; 
+				}
+			});
+		    });
+	}
+	
+	function dialogHandler (loca, modalSetting){
+		console.log("start of dialogHandler: "+dialogOn)
+		var diaBox = $(loca);
+		$('#noteButtons').fadeOut(300);
+		diaBox.dialog({
+				height: 420,
+				width: 476,
+				modal: modalSetting,
+				//title: $(loca).attr('title'),
+				open: function(event, ui) {
+					$('.ui-dialog').hide().fadeIn(300);
+					dialogOn=true
+				},
+				buttons:{
+					"Save Note": function () {},
+					"Cancel": function() {
+						$(this).dialog( "close" );
+					}
+				},
+				close: function(event, ui)
+				{
+				    $('#noteButtons').fadeIn(300);
+					$(this).dialog("destroy");
+					dialogOn=false
+					console.log('dialog destroyed on close')
+				}
+					
+			})
+				.dialog("open");
+		
+
+}
+	
+	
+	function mainMenuSwitch(event) {
+		console.log("button clicked: "+$(this).attr('href'));
+		var $eventSelection=$(this).attr('href')
+		for (var i = 0; i <itemArray.length; i++) {
+		console.log("form itemArray cycle through: "+itemArray[i].attr('id'));
+			if ($(this).attr('href')=='#'+itemArray[i].attr('id')){
+				$eventSelection=$(itemArray[i])
+				console.log($eventSelection,itemArray[i].html())
+				break;
+			};
+		};
+		var eventMainData = $(this).data('maincat')
+		$mainMenu.find('li a').removeClass('intiButton')
+			.each(function(){
+				if ($(this).attr("data-maincat")==eventMainData){
+				$(this).addClass('intiButton');
+				}
+			});
+		if (('#workSpace > div').length>=1){
+			$('#workSpace > div').fadeOut(300, function() {
+			$workspace.empty();
+			});
+		};
+		$subMenu.fadeOut(300, function() {
+			//console.log(event.target)
+			$subMenu.find('li a').removeClass('intiButton')
+			$subMenu.find('ul').removeClass('subMenuList');
+			$subMenu.find('li a').removeClass('subMenuButton');
+			$subMenu.removeClass('subMenu');
+			$subMenu.addClass('hide');
+			$subMenu.removeAttr("style");
+			$subMenu.remove();
+			$subMenu = $eventSelection;
+			$subMenu.removeAttr("style");
+			if ($subMenu.has('.hide')){
+				$subMenu.removeClass('hide');
+			};
+			$subMenu.find('li a').each(function (){
+				console.log($(this).attr('data-subcat'));
+				if ($(this).attr('data-subcat')==$('#'+eventMainData+'Menu ul li a').attr('data-subcat')){
+				$(this).addClass('intiButton')
+				}
+			})
+			//console.log($('#'+eventMainData+'Menu ul li a[data-subcat]'))
+			console.log("form submenu fade out: "+$('#'+eventMainData+'Menu ul li:first-child a').data('subcat'));
+			subMenuBuild();
+			addSubArea($('#'+eventMainData+'Menu ul li a').data('subcat'));
+			});
+		//return false;
+	};
+	
+	function subMenuSwitch(event) {
+		console.log("button clicked: "+$(this).data('subcat'));
+		var eventSubData = $(this).data('subcat');
+		$subMenu.find('li a')
+			.removeClass('intiButton')
+			.each(function(){
+				if ($(this).attr("data-subcat")==eventSubData){
+				$(this).addClass('intiButton');
+				};
+			});
+		console.log($('#workSpace > div').attr('id'));
+		console.log("div to be removed "+$('#workSpace > div').attr('id'));
+		$workspace.fadeOut(500, function() {
+			//$('#workSpace  > div').removeClass('textBox');
+			//$('#workSpace  > div').addClass('hide');
+			$workspace.empty();
+			console.log("From subMenuSwitch: "+$workspace.children().attr('id'), eventSubData)
+			addSubArea(eventSubData);
+			});
+		
+		
+		return false;
+		};
+	
+	function addSubArea(label){
+		//var $areaAdd = $(label).clone();
+		for (var i = 0; i <itemArray.length; i++) {
+		console.log(itemArray[i].find(label).attr('id'));
+			if('#'+itemArray[i].find(label).attr('id') === label){
+				console.log("matched: "+(itemArray[i].find(label)));
+				$areaAdd = $(itemArray[i].find(label)).clone();
+				break;
+			};
+		};
+		//var $areaAdd = $(label)
+		//$areaAdd.show()
+		console.log("addSubArea add "+label, $areaAdd);
+		//$areaAdd.addClass('textBox');
+		//console.log("added textBox");
+		$areaAdd.appendTo($workspace);
+		$areaAdd.show()
+		workSpaceCheck(label)
+		console.log("appened to $workspace");
+		$workspace.fadeIn(500, function (){
+			$(this).removeAttr('style');
+			//workSpaceCheck(label)
+			console.log("new div in workspace: "+$workspace.children().attr('id'))
+		});
+	};
+	
+	function workSpaceCheck(label){
+	if (label==='#videoSet'){
+		//console.log("video width: "+$('#videoSet').width());
+		//var vidPos = (($(label).width()*.5)-($('#videoSet video').width()*.5))*-1
+		//console.log("video width: "+$('#videoSet').width(), vidPos);
+		//$('#videoSet video').css('left', vidPos)
+	}
+	if (label==="#documentsSet"){
+		$workspace.children().addClass('textBox')
+		$workspace.children().addClass('documentsSet')
+	}
+	console.log("looking for the charator in label: "+label.substring(0,9))
+	if (label==="#imageSet"){
+		$workspace.children().addClass('textBox')
+		$('#imageSet').on('click','a',fancyClick);
+	}
+	
+	if (label==="#problemSet"){
+		$workspace.children().addClass('textBox')
+	}
+	if (label.substring(0,9)==="#infoArea"){
+		var $infoBuild = $('<div id="infoIconsCollection"/><div id="infoTextDisplay"/>')
+		$infoBuild.prependTo($workspace)
+		//$workspace.children().removeClass('textBox');
+		//$workspace.find('#infoTextDisplay').addClass('infoDisplay');
+		$workspace.find(label).addClass('hide');
+		//$workspace.find(label).addClass('infoIconsCollection');
+		$workspace.find(label).find('.infodiv h2').each(function(){
+			var title = $(this).html();
+			$('<li><a href="#">'+title+'<img src="icons/infoicon2.gif"/></a><br /></li>').appendTo('#infoIconsCollection')
+		})
+		$workspace.find('#infoIconsCollection').find('li').wrapAll('<ul></ul>');
+		var infoText= $workspace.find(label).find('.infodiv:first').html()
+		console.log(infoText)
+		$workspace.find('#infoTextDisplay').append(infoText)
+		$('#infoIconsCollection').on('click','a',infoSwitch); 
+		
+	}
+	
+	if (label==="#solution"){
+		$workspace.children().addClass('textBox')
+	}
+	if (label==="#test"){
+		$workspace.children().addClass('textBox')
+	}
+	if (label==="#reflection"){
+		$workspace.children().addClass('textBox')
+	}
+	
+	
+	}
+	
+	function infoSwitch(event){
+		console.log("button clicked: "+$(this).text());
+		var infoBit=$(this).text()
+		$infoTextDisplay = $('#infoTextDisplay')
+		console.log($infoTextDisplay)
+		console.log($infoTextDisplay.find('h2').text())
+		if ($infoTextDisplay.find('h2').text()!==infoBit){
+			$infoTextDisplay.fadeOut(500, function() {
+					$infoTextDisplay.empty();
+					console.log(itemArray[4])
+					$workspace.find('.infodiv h2').each(function(){
+						console.log($(this).text())
+						if ($(this).text()==infoBit){
+							//console.log($(this).parent().html());
+							$infoTextDisplay.append($(this).parent().html());
+							$infoTextDisplay.fadeIn(500);
+							return false;
+						};
+						
+					});
+				});
+			}
+	}
+	
+	function fancyClick(event){
+		var picID = "."+$(this).attr('class')
+		console.log("from fancyClick: "+picID)
+		$(picID).fancybox({
+			openSpeed	: 'slow',
+			openEffect	: 'fade',
+			closeSpeed	: 300,
+			closeEffect	: 'fade',
+			helpers : {
+				title : {
+				type : 'inside'
+				},
+				overlay	: {
+				opacity : 0.7,
+					css : {
+						'background-color' : '#000'
+					}
+				},
+				thumbs	: {
+					width	: 50,
+					height	: 50
+				}
+			}
+		
+		});
+	}
+	
+});
+</script>
+
+</body>
+</html>

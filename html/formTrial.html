@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>video trial</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" />
+<!--<script src="script/jquery-1.7.1.js"></script>-->
+<!--<script src="script/jquery-ui-1.8.18.custom.min.js"></script>-->
+<link rel="stylesheet" href="script/fancybox/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+<!--<script type="text/javascript" src="script/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>-->
+
+</head>
+<body>
+<div id="siteContainer">
+		    <div id="noteButtons">
+				<ul>
+					<li><a href="note_form.php">Add a note</a></li>
+					<li><a href="#videomaker">Add a video</a></li>
+				</ul>
+		    </div>
+</div>
+<script src="script/jquery-1.7.1.js"></script>
+<script src="script/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="script/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script>
+$(function(){
+
+var dialogOn = false
+
+
+$('#noteButtons').on('click','a', function(evt){
+	evt.preventDefault();
+	if (dialogOn){
+		console.log("dialog is on")
+		//$(diaBox).eq(0).dialog("destory").remove();
+		return false;
+		}
+	console.log($(this).attr('href'));
+	var loca = $(this).attr('href');
+	
+	if (loca === '#notemaker'){
+	dialogHandler(loca, false)
+	}
+	if (loca === '#videomaker'){
+	dialogHandler(loca, true)
+	}
+	//return false;
+})
+
+function dialogHandler (loca, modalSetting){
+		console.log("start of dialogHandler: "+dialogOn)
+		var diaBox = $(loca);
+		diaBox.dialog({
+				height: 420,
+				width: 476,
+				modal: modalSetting,
+				//title: $(loca).attr('title'),
+				open: function(event, ui) {
+					$('.ui-dialog').hide().fadeIn(300);
+					dialogOn=true
+				},
+				buttons:{
+					"Save Note": function () {},
+					"Cancel": function() {
+						$( this ).dialog( "close" );
+					}
+				},
+				close: function(event, ui)
+				{
+					$(this).dialog("destroy");
+					dialogOn=false
+					console.log('dialog destroyed on close')
+				}
+					
+			});
+		diaBox.dialog("open");
+		
+
+
+}
+})
+</script>
+
+</body>
+
+
+</html>

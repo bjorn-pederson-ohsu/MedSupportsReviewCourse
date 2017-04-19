@@ -1,0 +1,217 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Medication Review Course</title>
+<link rel="stylesheet" type="text/css" href="style_form.css" />
+<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" />
+<script src="script/jquery-1.7.1.js"></script>
+<script src="script/jquery-ui-1.8.18.custom.min.js"></script>
+<!--<script src="script/funtimejs.js"></script>-->
+<script>
+$(function(){
+	var modContent = $('.modContent')
+	modContent.addClass('hide');
+	$('.modArea').on('click', 'ul li a', function(){
+	    console.log($(this).attr('href'));
+	    var loc = $(this).attr('href');
+	    $( loc+":ui-dialog" ).dialog( "destroy" );
+	
+		$( loc ).dialog({
+			height: 575,
+			width: 550,
+			modal: true
+		});
+		$(loc).dialog("open");
+		return false;
+		//$($(this).attr('href')).dialog("open");
+	});
+	
+	//$('.button').on('click', function (){
+	//	console.log()
+	//});
+});
+</script>
+</head>
+
+<body>
+    <div id="siteContainer">
+	<div id="siteHeader">
+	    <h1>Medication Support – Review Course</h1>
+	    <p>This is a comprehensive review of the Medication Administration course</p>
+	</div><!---siteHeader End--->
+	<div id="courseDescription">
+	    <div id="courseDescriptionLeft">
+		<h2 >Welcome</h2>
+		<p>This course is designed to give you a chance to review what you know about medication supports by looking at problems various that other DSPs are having with thier clients. Perhaps you know good solutions for the various problems described.</p>
+	    </div><!--- class left end--->
+	    <div id="courseDescriptionRight"> 
+		<h2>Modules</h2> 
+		<p>Select one of the modules below to begin the review.</p> 
+	    </div><!---class right end--->
+	    <!--<div id="seClear" />-->
+	</div><!---courseDescription--->
+	<div id="menuBlock"> 
+	    <h3>Orientation <span class="arrow"></span></h3>	    
+	    <div id="modOrilist"class="modArea">
+		<!--<h3>Orientation <span class="arrow"></span></h3>-->
+		    <ul>
+		    <li><a href="#orientation"><p>Overview of Module SetUp</p></a></li>
+		    <li><a href="#understanding"><p>Understanding the Problem</p></a></li>
+		    <li><a href="#work"><p>Your Work and Solution</p></a></li>
+		    <li><a href="#reflection"><p>The Reflection</p></a></li>
+		    </ul>
+	    </div><!---modComp End--->
+	    <div id="modOri" class="modContent">
+			<div id="orientation" title="Overview of Module SetUp">
+			<h1>Overview of Module SetUp</h1>
+			    <div class="button">Start</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Understand how this review is set-up.</li>
+				    <li>Where to find information in the modules.</li>
+				    <li>Locate the support areas.</li> 
+				    <li>Understand what is expected of you as a learner.</li>
+				</ol>
+			    </div>
+			    <div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the learning environment and how to use the tools.</div>
+			</div><!-- Orientaiton area End -->
+			<div id="understanding" title="Understanding the Problem">
+			<h1>Understanding the Problem</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Undersstand how the problem is presented</li>
+				    <li>Where to find the information and resources for the problem.</li>
+				</ol>
+			    </div>
+		    <div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- understanding area End -->
+		    <div id="work" title="Your Work and Solution">
+			<h1>Your Work and Solution</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Know what tools you have to work with.</li>
+				    <li>Understand how to use the tools.</li>
+				    <li>Understand how to enter a solution.</li>
+				</ol>
+			    </div>
+		    <div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- work area End -->
+		    <div id="reflection" title="The Reflection">
+			<h1>The Reflection</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Understand how the reflection process works.</li>
+				    <li>understand your audience.</li>
+				    <li>Demostrate how to create a reflection for the modules.</li>
+				</ol>
+			    </div>
+			<div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- reflection area End -->
+	      </div>
+	    <h3>Modules<span class="arrow"></span></h3>	    
+	    <div id="modSelections"class="modArea">
+		<!--<h3>Modules<span class="arrow"></span></h3>-->
+		    <ul>
+		    <li><a href="#basics"><p>Working with Medication Basics</p></a></li> 
+		    <li><a href="#error"><p>Working to Prevent Medication Error</p></a></li> 
+		    <li><a href="#providers"><p>Working with Health Care Providers</p></a></li>
+		    <li><a href="#routes"><p>Administering Medications - Prep and Routes</p></a></li>
+		    <li><a href="#refusals"><p>Administering Medications - Handling Refusals</p></a></li>
+		    </ul>
+	    </div><!---modComp End--->
+	    <div id="modContent" class="modContent">
+		<div id="basics" title="Working with Medication Basics">
+			<h1>Working with Medication Basics</h1>
+			    <a href="medBasics.html"><div class="button">Start</div></a>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Describe why people take different kinds of medications, remedies, and nutritional supplements and provide examples of these.</li>
+				    <li>Describe why, when, and how to monitor for problem reactions to medication.</li>
+				    <li>Describe situations in which a medication needs to be destroyed and how to destroy it </li>
+				    <li>Accurately read a prescription label and over-the-counter medication label.</li>
+				</ol>
+			    </div>
+			<div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- basics area End -->
+		<div id="error" title="Working to Prevent Medication Error">
+			<h1>Working to Prevent Medication Error</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Describe the five steps that indicate that medications have been taken properly. (Five rights) </li>
+				    <li>Recognize medication errors.</li>
+				    <li>Define a medication error.</li>
+				</ol>
+			    </div>
+			<div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- error area End -->
+		<div id="providers" title="Working with Health Care Providers">
+			<h1>Working with Health Care Providers</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Describe how, when, and why to complete a health and medication history.</li>
+				    <li>Describe the questions that are important to be answered before using new medications.</li>
+				    <li>Describe how to properly store medications.</li>
+				</ol>
+			    </div>
+			<div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- provider area End -->
+		    <div id="routes" title="Administering Medications - Routes">
+			<h1>Administering Medications - Prep and Routes</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Describe a Medication Administration Record and its purpose.</li>
+				    <li>Describe steps in preparing for medication administration.</li>
+				    <li>Describe the purpose of a “triple check” and how it is to be performed.</li>
+				    <li>Demonstrate appropriate hand-washing and hygiene techniques.</li>
+				    <li>Demonstrate the correct technique for administering medications through five common routes (mouth, ears, eyes, nose, and skin). </li>
+				</ol>
+			    </div>
+			<div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- routes area End -->
+		    <div id="refusals" title="Administering Medications - Handling Refusals">
+			<h1>Administering Medications - Handling Refusals</h1>
+			    <div class="button_no">not yet</div>
+			    <div class="description">
+				<h4>Learner Objectives</h4>
+				<p>When you have completed this module you will be able to do the following:</p>
+				<ol>
+				    <li>Describe what to do when a person does not take medications as recommended.</li>
+				    <li>Describe methods for helping people understand and use their medications correctly.</li>
+				</ol>
+			    </div>
+			<div class="direction">When you are ready to begin, please click the Start Button to begin. This module will give an overview of the structure of the problem.</div>
+		    </div><!-- refusals area End -->
+	    </div>
+	</div><!---menuBlock--->
+    </div><!---siteContainer end>--->
+</body>
+</html>
+<!--completeMod">Finished &#10004</p></a></li>
+		    </ul>
+	    </div><!---modComp End
+	</div><!---menuBlock
+    </div><!---siteContainer end>
+</body>
+</html>-->
